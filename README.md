@@ -1,22 +1,21 @@
 # y/x Trade
 
-A Order Book  Dapp decentralized exchange application 
+A Order Book Dapp decentralized exchange application
+
+## Development
 
 
-## To Build
-    - [x] ERC 20 Token and test
-    - [ ] Exchange
-    - [ ] Order Book
-    - [ ] Frontend with React js 
+- [x] ERC 20 Token and test
+- [ ] Exchange
+- [ ] Order Book
+- [ ] Frontend with React js
 
 ## Tools
 
 - Solidty ^0.8.0
 - hardhat
 - chai and ether (for testing)
--  React js
-
-## Development
+- React js
 
 
 ### Install dependencies
@@ -25,7 +24,7 @@ A Order Book  Dapp decentralized exchange application
 npm install
 ```
 
-##  Hardhat
+## Hardhat
 
 Open the Hardhat console
 
@@ -49,3 +48,4 @@ npm run hardhat:test
 
 ```bash
 npm run hardhat:coverage
+```
