@@ -20,15 +20,13 @@ string public constant name = "SquadTrade";
     mapping(address => uint256) balances;
 
 
-    mapping(address => mapping (address => uint256)) allowed;
+    mapping(address => mapping (address => uint256)) allowed; 
 
 
     uint256 totalSupply_ = 20**decimals;
 
    constructor(){
        balances[msg.sender] = totalSupply_;
-
-
     }
 
 
@@ -47,6 +45,8 @@ string public constant name = "SquadTrade";
 
 
     function transfer(address receiver, uint256 numTokens) public override returns (bool) {
+        require(receiver != address(0));
+
 
         require(numTokens <= balances[msg.sender]);
 
@@ -97,10 +97,6 @@ string public constant name = "SquadTrade";
         return true;
 
     }
-
-
-
-
 
 
 
